@@ -47,7 +47,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.15</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.16</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2021.3.4f1</UnityVersion>
@@ -56,13 +56,13 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.1.4\Runtime\Common\INativeStore.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.1.4\Runtime\Common\MiniJSON.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.1.4\Runtime\Common\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.1.4\Runtime\Common\VersionCheck.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.3.0\Runtime\Common\INativeStore.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.3.0\Runtime\Common\MiniJSON.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.3.0\Runtime\Common\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.3.0\Runtime\Common\VersionCheck.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Library\PackageCache\com.unity.purchasing@4.1.4\Runtime\Common\Purchasing.Common.asmdef" />
+    <None Include="Library\PackageCache\com.unity.purchasing@4.3.0\Runtime\Common\Purchasing.Common.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -640,6 +640,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.Services.Core.Player.csproj">
+      <Project>{ECAAB318-748C-BC18-BD35-BDA831B9D00D}</Project>
+      <Name>Unity.Services.Core.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Core.Internal.Player.csproj">
+      <Project>{242F3B96-25BC-D52A-723D-819746AF55CB}</Project>
+      <Name>Unity.Services.Core.Internal.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
       <Project>{AB275495-01AF-BE21-C11B-91450C234AC6}</Project>
       <Name>UnityEngine.UI.Player</Name>
