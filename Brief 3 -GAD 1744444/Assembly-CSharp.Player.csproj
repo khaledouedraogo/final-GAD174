@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\TooltipManager.cs" />
     <Compile Include="Assets\Scripts\StatsInit.cs" />
     <Compile Include="Assets\transitionscript.cs" />
+    <Compile Include="Assets\Scripts\LoadScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
