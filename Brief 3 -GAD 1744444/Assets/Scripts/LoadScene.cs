@@ -1,15 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Animations;
 using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
-    public void Load()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
-    }
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +18,15 @@ public class LoadScene : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void Work()
+    {
+        StartCoroutine(Load());
+    }
+    public IEnumerator Load()
+    {
+        yield return new WaitForSeconds(0.7f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
